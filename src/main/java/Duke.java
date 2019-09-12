@@ -51,7 +51,7 @@ public class Duke {
         if(parse(userInput)[0].equals("done")){
             String tmp = parse(userInput)[1].toString();
             int tmpp = Integer.parseInt(parse(userInput)[1]);
-            //talist.set(tmpp-1, tmp);
+
             tasklist.get(tmpp-1).markAsDone();
             tasklist.set(tmpp-1, tasklist.get(tmpp-1));
             printLines(line);
